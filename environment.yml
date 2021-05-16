@@ -1,0 +1,35 @@
+# This is a conda environment setup file.
+# Mainly it is used by readthedocs to create a virt-env for flexinetz and
+# install the dependencies. 
+# Note: Install Skeletron manually from https://github.com/haukebents/Skeletron 
+# Note: 
+# Note: geopandas is from pip, so that it does not mess up the fiona install.
+# Note: You could also install from this with 
+# > conda env create -f environment.yml
+name: flexinetz
+channels:
+- conda-forge
+dependencies:
+  - python=3.6 # can change in future
+  - numpy
+  - pyomo=5.7
+  - pandas=0.23
+  - xlrd=1.2
+  - openpyxl
+  - coincbc
+  - pyshp
+  - shapely
+  - basemap
+  - pyproj
+  - geopy
+  - plotly
+  - psycopg2
+  - sqlalchemy
+  - fiona
+  - python-igraph
+  - qhull # Skeletron dependency
+  - pip
+  - pip:
+    - geopandas==0.3
+    - networkx==1.5 # Skeletron dependency
+    - streetnames # Skeletron dependency
