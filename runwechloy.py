@@ -3,14 +3,8 @@ import os
 import pandas as pd
 from rivus.utils import pandashp as pdshp
 from rivus.main import rivus
-try:
-    import pyomo.environ
-    from pyomo.opt.base import SolverFactory
-    PYOMO3 = False
-except ImportError:
-    import coopr.environ
-    from coopr.opt.base import SolverFactory
-    PYOMO3 = True
+import pyomo.environ
+from pyomo.opt.base import SolverFactory
 
 
 # IN
@@ -77,16 +71,12 @@ def run_scenario(scenario):
     
     # create & solve model
     prob = rivus.create_model(data, vertex, edge)
-    if PYOMO3:
-        prob = prob.create() # no longer needed in Pyomo 4+
     optim = SolverFactory('cbc')
     optim = setup_solver(optim)
-    result = optim.solve(prob, tee=True)
-    if PYOMO3:
-        prob.load(result) # no longer needed in Pyomo 4+
 
-    
-    # report    
+    result = optim.solve(prob, tee=True)
+
+    # report
     rivus.report(prob, os.path.join(result_dir, 'report.xlsx'))
     
     # plots

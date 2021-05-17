@@ -5,9 +5,9 @@ import pandas
 from rivus.utils import pandashp as pdshp
 
 # Consts
-WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz')
-INPUT_DIR = os.path.join(WORKDIR, 'data/wechloy')
-RES_DIR = os.path.join(WORKDIR, 'data/wechloy')
+#WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz')
+INPUT_DIR = os.path.join('data/wechloy')
+RES_DIR = os.path.join('data/wechloy')
 if not os.path.exists(RES_DIR):
     os.makedirs(RES_DIR)
 EPSG_CODE = 'epsg:3857'
