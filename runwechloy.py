@@ -6,6 +6,13 @@ from rivus.main import rivus
 import pyomo.environ
 from pyomo.opt.base import SolverFactory
 
+# Adjusting rivus-intrinsic keys to FlexiGIS-building types
+new_color_keys = {'farm': 'agricultural',
+                  'school': 'educational', }
+
+for old_key in new_color_keys:
+    rivus.COLORS[new_color_keys[old_key]] = rivus.COLORS.pop(old_key)
+
 
 # IN
 base_directory = os.path.join('data/wechloy')
@@ -48,7 +55,7 @@ def setup_solver(optim):
         #optim.set_options('primalT=1e-07')
         #optim.set_options('zeroT=1e-25')
         #optim.set_options('preT=1e-07')
-        optim.set_options('sec=1200')  # seconds
+        optim.set_options('sec=600')  # seconds
     else:
         print("Warning from setup_solver: no options set for solver "
             "'{}'!".format(optim.name))
@@ -82,13 +89,14 @@ def run_scenario(scenario):
     # plots
     for com, plot_type in [('Elec', 'caps'), ('Heat', 'caps'), ('Gas', 'caps'),
                            ('Elec', 'peak'), ('Heat', 'peak')]:
-        
+
         # two plot variants
         for plot_annotations in [False, True]:
             # create plot
             fig = rivus.plot(prob, com, mapscale=False, tick_labels=False, 
                              plot_demand=(plot_type == 'peak'),
-                             annotations=plot_annotations)
+                             annotations=plot_annotations,
+                             buildings=(building_shapefile, True))
             plt.title('')
             
             # save to file

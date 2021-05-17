@@ -86,8 +86,9 @@ for com, plot_type in [('Elec', 'caps'), ('Heat', 'caps'), ('Gas', 'caps'),
                        ('Elec', 'peak'), ('Heat', 'peak')]:
     
     # create plot
-    fig = rivus.plot(prob, com, mapscale=False, tick_labels=False, 
-                      plot_demand=(plot_type == 'peak'))
+    fig = rivus.plot(prob, com, mapscale=False, tick_labels=False,
+                     plot_demand=(plot_type == 'peak'),
+                     buildings=(building_shapefile, True))
     plt.title('')
     # save to file
     for ext in ['png', 'pdf']:
