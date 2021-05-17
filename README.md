@@ -9,10 +9,11 @@ companion model for [urbs](https://github.com/tum-ens/urbs), an optimisation mod
 has been first published in the dissertation of [Johannes Dorfner](https://github.com/ojdo) ["Open Source Modelling 
 and Optimisation of Energy Infrastructure at Urban Scale"](http://nbn-resolving.de/urn/resolver.pl?urn:nbn:de:bvb:91-diss-20161206-1285570-1-6).
 
-**FlexiGIS** is 
-**FlexiGIS-plugin** is a graphical user interface (GUI) of the FlexiGIS-model including FlexiGIS-light. It extracts the geo-datasets of the urban energy infrastructure and simulates the electricity consumption in the respective case study. This plugin can be directly installed from the QGIS Plugin Manager within the QGIS Desktop.
+**FlexiGIS-plugin** is a graphical user interface (GUI) of the FlexiGIS-model including FlexiGIS-light. It extracts the 
+geo-datasets of the urban energy infrastructure and simulates the electricity consumption in the respective case study. 
+This plugin can be directly installed from the QGIS Plugin Manager within the QGIS Desktop.
 
-## Features
+## Features (TODO: Adjust text to fit FlexiNetz)
 
   * rivus is a mixed integer linear programming model for multi-commodity energy infrastructure networks systems with a 
     focus on high spatial resolution.
