@@ -1,4 +1,4 @@
-# letzter Stand: 29.04.2021, 13:22
+# letzter Stand, 17.05.21 12:53
 import geopandas
 import pandas as pd
 import rivus
@@ -7,14 +7,15 @@ import shutil
 import os
 
 # Consts
-WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy')
+WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
+#WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy') # DLR Linux
 RES_DIR = os.path.join(WORKDIR, 'data')
 if not os.path.exists(RES_DIR):
     os.makedirs(RES_DIR)
 EPSG_XY = 3857
 
 # IN
-buildings_apath = os.path.join(WORKDIR, 'data/flexigis-data/output', 'building.shp')
+buildings_apath = os.path.join(WORKDIR, 'data/flexigis-input/output', 'building.shp')
 edge_apath = os.path.join(WORKDIR, 'results', 'edge.shp')
 
 # OUT

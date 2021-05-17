@@ -1,4 +1,4 @@
-# letzter Stand: 29.04.2021, 13:08
+# letzter Stand, 17.05.21 12:53
 import os
 import geopandas
 import shapely
@@ -11,7 +11,7 @@ from rivus.utils import skeletrontools
 
 WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy')
 #WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy')
-INPUT_DIR = os.path.join(WORKDIR, 'data/flexigis-data/output') # FlexiGIS-Streets ist Vorlage für rivus-Edgefile
+INPUT_DIR = os.path.join(WORKDIR, 'data/flexigis-input/output') # FlexiGIS-Streets ist Vorlage für rivus-Edgefile
 RES_DIR = os.path.join(WORKDIR, 'data/testing')
 if not os.path.exists(RES_DIR):
     os.makedirs(RES_DIR)

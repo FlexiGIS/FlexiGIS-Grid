@@ -1,4 +1,4 @@
-# letzter Stand 29.04.21, 13:08
+# letzter Stand, 17.05.21 12:53
 '''
 # Kombiniere die shapefiles, die FlexiGIS zur Verfügung stellt. Der Name der Shapefiles
 # gibt den Typen der Gebäude wieder.
@@ -34,9 +34,10 @@ import geopandas as gpd
 import pandas as pd
 
 # Konstanten
-WORKDIR = os.path.normpath('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy')
-INPUT_DIR = os.path.join(WORKDIR, 'data/flexigis-data/fg-wechloy-raw')
-RES_DIR = os.path.join(WORKDIR, 'data/flexigis-data/output')
+WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
+#WORKDIR = os.path.normpath('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy') # DLR Linux
+INPUT_DIR = os.path.join(WORKDIR, 'data/flexigis-input/fg-wechloy-raw')
+RES_DIR = os.path.join(WORKDIR, 'data/flexigis-input/output')
 
 
 shp_reader = gpd.read_file
