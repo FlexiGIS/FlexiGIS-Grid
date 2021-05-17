@@ -9,8 +9,8 @@ from rivus.utils import skeletrontools
 
 # Consts
 
-WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy')
-#WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy')
+#WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy')
+WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz')
 INPUT_DIR = os.path.join(WORKDIR, 'data/flexigis-input/output') # FlexiGIS-Streets ist Vorlage für rivus-Edgefile
 RES_DIR = os.path.join(WORKDIR, 'data/wechloy')
 if not os.path.exists(RES_DIR):

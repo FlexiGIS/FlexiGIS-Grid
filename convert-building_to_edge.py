@@ -7,8 +7,8 @@ import shutil
 import os
 
 # Consts
-WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
-#WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy') # DLR Linux
+#WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
+WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz') # DLR Linux
 RES_DIR = os.path.join(WORKDIR, 'data')
 if not os.path.exists(RES_DIR):
     os.makedirs(RES_DIR)
