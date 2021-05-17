@@ -53,7 +53,7 @@ This plugin can be directly installed from the QGIS Plugin Manager within the QG
     iii) Activate environment
 
     ```
-    $ conda activate flexinetz
+    (base)$ conda activate flexinetz
     ```
 
 4. Install [**Skeletron package**](https://github.com/ojdo/Skeletron.git) into **flexinetz** environment using **pip**
