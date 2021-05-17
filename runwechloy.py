@@ -14,14 +14,14 @@ except ImportError:
 
 
 # IN
-base_directory = os.path.join('data/wechloy')
+base_directory = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz/data/wechloy')
 building_shapefile = os.path.join(base_directory, 'building_w_nearest')
 edge_shapefile = os.path.join(base_directory, 'edge_w_demands')
 vertex_shapefile = os.path.join(base_directory, 'vertex_w_source')
-data_spreadsheet = os.path.join(base_directory, 'data.xlsx')
+data_spreadsheet = os.path.join(base_directory, 'data-flexigis.xlsx')
 
 # OUT
-result_dir = os.path.join('data/wechloy/results')
+result_dir = os.path.join(base_directory, 'results')
 # create result directory if not existing already
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
