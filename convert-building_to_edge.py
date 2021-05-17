@@ -9,7 +9,7 @@ import os
 # Consts
 #WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
 WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz') # DLR Linux
-RES_DIR = os.path.join(WORKDIR, 'data')
+RES_DIR = os.path.join(WORKDIR, 'data/wechloy')
 if not os.path.exists(RES_DIR):
     os.makedirs(RES_DIR)
 EPSG_XY = 3857
