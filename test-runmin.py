@@ -28,14 +28,14 @@ from rivus.utils import pandashp as pdshp
 from rivus.main import rivus
 
 # INPUT
-base_directory = os.path.join('data', 'test', 'mnl')
+base_directory = os.path.join('data', 'mnl')
 building_shapefile = os.path.join(base_directory, 'building')
 edge_shapefile = os.path.join(base_directory, 'edge')
 vertex_shapefile = os.path.join(base_directory, 'vertex')
 data_spreadsheet = os.path.join(base_directory, 'data.xlsx')
 
 # OUTPUT
-result_dir = os.path.join('data', 'test', 'results')
+result_dir = os.path.join('data', 'mnl', 'results')
 # create result directory if not existing already
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
