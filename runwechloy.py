@@ -14,7 +14,7 @@ except ImportError:
 
 
 # IN
-base_directory = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz/data/wechloy')
+base_directory = os.path.join('data/wechloy')
 building_shapefile = os.path.join(base_directory, 'building_w_nearest')
 edge_shapefile = os.path.join(base_directory, 'edge_w_demands')
 vertex_shapefile = os.path.join(base_directory, 'vertex_w_source')
