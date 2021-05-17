@@ -6,7 +6,7 @@ from rivus.main import rivus
 import pyomo.environ
 from pyomo.opt.base import SolverFactory
 
-# Adjusting rivus-intrinsic keys to FlexiGIS-building types
+# Adjusting rivus-intrinsic color keys to FlexiGIS-building types
 new_color_keys = {'farm': 'agricultural',
                   'school': 'educational', }
 
