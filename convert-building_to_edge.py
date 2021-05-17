@@ -16,7 +16,7 @@ EPSG_XY = 3857
 
 # IN
 buildings_apath = os.path.join(WORKDIR, 'data/flexigis-input/output', 'building.shp')
-edge_apath = os.path.join(WORKDIR, 'results', 'edge.shp')
+edge_apath = os.path.join(WORKDIR, 'data/wechloy', 'edge.shp')
 
 # OUT
 to_edge_apath = os.path.join(RES_DIR, 'to_edge.shp')
