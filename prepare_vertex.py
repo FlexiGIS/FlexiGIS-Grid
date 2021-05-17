@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 # Consts
-WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/rivus-wechloy')
+WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz')
 INPUT_DIR = os.path.join(WORKDIR, 'data/wechloy')
 RES_DIR = os.path.join(WORKDIR, 'data/wechloy')
 if not os.path.exists(RES_DIR):
