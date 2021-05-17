@@ -14,14 +14,14 @@ except ImportError:
 
 
 # IN
-base_directory = os.path.join('data', 'wechloy')
+base_directory = os.path.join('data/wechloy')
 building_shapefile = os.path.join(base_directory, 'building_w_nearest')
 edge_shapefile = os.path.join(base_directory, 'edge_w_demands')
 vertex_shapefile = os.path.join(base_directory, 'vertex_w_source')
 data_spreadsheet = os.path.join(base_directory, 'data.xlsx')
 
 # OUT
-result_dir = os.path.join('data', 'wechloy', 'results')
+result_dir = os.path.join('data/wechloy/results')
 # create result directory if not existing already
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
