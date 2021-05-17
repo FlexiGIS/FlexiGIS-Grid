@@ -13,16 +13,19 @@ except ImportError:
     PYOMO3 = True
 
 
-# Consts
-base_directory = os.path.join('data')
+# IN
+base_directory = os.path.join('data', 'wechloy')
 building_shapefile = os.path.join(base_directory, 'building_w_nearest')
 edge_shapefile = os.path.join(base_directory, 'edge_w_demands')
 vertex_shapefile = os.path.join(base_directory, 'vertex_w_source')
 data_spreadsheet = os.path.join(base_directory, 'data.xlsx')
 
-# IN
-
 # OUT
+result_dir = os.path.join('data', 'wechloy', 'results')
+# create result directory if not existing already
+if not os.path.exists(result_dir):
+    os.makedirs(result_dir)
+
 
 # scenarios
 
@@ -82,10 +85,6 @@ def run_scenario(scenario):
     if PYOMO3:
         prob.load(result) # no longer needed in Pyomo 4+
 
-    # create result directory if not existent
-    result_dir = os.path.join('result', os.path.basename(base_directory))
-    if not os.path.exists(result_dir):
-        os.makedirs(result_dir)
     
     # report    
     rivus.report(prob, os.path.join(result_dir, 'report.xlsx'))

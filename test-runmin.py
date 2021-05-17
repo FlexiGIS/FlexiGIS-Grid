@@ -27,17 +27,20 @@ import pandas as pd
 from rivus.utils import pandashp as pdshp
 from rivus.main import rivus
 
-
+# INPUT
 base_directory = os.path.join('data', 'test', 'mnl')
 building_shapefile = os.path.join(base_directory, 'building')
 edge_shapefile = os.path.join(base_directory, 'edge')
 vertex_shapefile = os.path.join(base_directory, 'vertex')
 data_spreadsheet = os.path.join(base_directory, 'data.xlsx')
 
+# OUTPUT
 result_dir = os.path.join('data', 'test', 'results')
 # create result directory if not existing already
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
+
+# DO
 
 # load buildings and sum by type and nearest edge ID
 # 1. read shapefile to DataFrame (with special geometry column)
