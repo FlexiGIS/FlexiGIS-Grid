@@ -21,6 +21,9 @@ edge_shapefile = os.path.join(base_directory, 'edge_w_demands')
 vertex_shapefile = os.path.join(base_directory, 'vertex_w_source')
 data_spreadsheet = os.path.join(base_directory, 'data-flexigis.xlsx')
 
+timeLimit = '1200' # upper time limit for CBC solver
+plotBuildings = False
+
 # OUT
 result_dir = os.path.join(base_directory, 'results')
 # create result directory if not existing already
@@ -29,6 +32,9 @@ if not os.path.exists(result_dir):
 
 
 # scenarios
+
+scenarios = [scenario_base]#,
+    #scenario_renovation]
 
 def scenario_base(data, vertex, edge):
     """Base scenario: change nothing-"""
@@ -41,21 +47,13 @@ def scenario_renovation(data, vertex, edge):
     area_demand.ix[('other', 'Heat'), 'peak'] *= 0.5
     return data, vertex, edge
 
-scenarios = [
-    scenario_base]#,
-    #scenario_renovation]
-
 # solver
 
 def setup_solver(optim):
     """Change solver options to custom values."""
     if optim.name == 'cbc':
-        #optim.set_options('integerT=1e-06')
-        #optim.set_options('dualT=1e-05')
-        #optim.set_options('primalT=1e-07')
-        #optim.set_options('zeroT=1e-25')
-        #optim.set_options('preT=1e-07')
-        optim.set_options('sec=600')  # seconds
+        # obtain more options through command line query 'cbc ?'
+        optim.set_options('sec={}}'.format(timeLimit))  # upper time limit
     else:
         print("Warning from setup_solver: no options set for solver "
             "'{}'!".format(optim.name))
@@ -84,7 +82,7 @@ def run_scenario(scenario):
     result = optim.solve(prob, tee=True)
 
     # report
-    rivus.report(prob, os.path.join(result_dir, 'report.xlsx'))
+    rivus.report(prob, os.path.join(result_dir, '{}-report.xlsx'.format(sce)))
     
     # plots
     for com, plot_type in [('Elec', 'caps'), ('Heat', 'caps'), ('Gas', 'caps'),
@@ -96,7 +94,7 @@ def run_scenario(scenario):
             fig = rivus.plot(prob, com, mapscale=False, tick_labels=False, 
                              plot_demand=(plot_type == 'peak'),
                              annotations=plot_annotations,
-                             buildings=(building_shapefile, True))
+                             buildings=(building_shapefile, plotBuildings))
             plt.title('')
             
             # save to file

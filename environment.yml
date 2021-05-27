@@ -1,16 +1,15 @@
 # This is a conda environment setup file.
-# Mainly it is used by readthedocs to create a virt-env for flexinetz and
+# Mainly it is used by readthedocs to create a virt-env for flexigisnetz and
 # install the dependencies. 
-# Note: Install Skeletron manually from https://github.com/haukebents/Skeletron 
-# Note: 
+# Note: Install Skeletron manually from https://github.com/haukebents/Skeletron
 # Note: geopandas is from pip, so that it does not mess up the fiona install.
 # Note: You could also install from this with 
-# > conda env create -f environment.yml
-name: flexinetz
+# $ conda env create -f environment.yml
+name: flexigisnetz
 channels:
 - conda-forge
 dependencies:
-  - python=3.6 # can change in future
+  - python=3.6
   - numpy
   - pyomo=5.7
   - pandas=0.23

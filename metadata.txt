@@ -1,0 +1,35 @@
+# This file contains metadata for the package.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=FlexiGIS-Netz
+qgisMinimumVersion=3.0
+description=Soft-coupling of FlexiGIS and the distribution network generator rivus by Johannes Dorfner.
+# version=0.1
+author=Alaa Alhamwi, Hauke Bents
+email=alaa.alhamwi@dlr.de
+
+about=Generates cost-optimized multi-carrier grid from urban-infrastructure geoprocessed by FlexiGIS
+
+#tracker=https://github.com/FlexiGIS/FlexiGIS-Netz
+repository=https://github.com/FlexiGIS/FlexiGIS-Netz
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=python, openstreetmap
+
+homepage=https://github.com/FlexiGIS/FlexiGIS-Netz
+category=soft-coupling
+# icon=
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole package, not just a single version)
+deprecated=False
