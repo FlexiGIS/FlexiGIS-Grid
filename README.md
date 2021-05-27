@@ -71,8 +71,8 @@ To complete the pre-processing, follow the workflow presented in Fig. 2. It migh
 
 ### 2. Network optimization with rivus:
 
-Open *runwechloy*.py. Change the *base_directory* to your input directory (i.e. where edge_w_demands.shp and vertex_w_source.shp)
-lie. The results will be generated within this folder.
+Open **runwechloy**.py. Change the *base_directory* to your input directory (i.e. where *edge_w_demands*.shp and 
+*vertex_w_source*.shp lie). The results will be generated within this folder.
 
 In line 33 under *scenarios* choose one (or a set) of scenarios, that should be run for you.
 
