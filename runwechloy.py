@@ -33,9 +33,6 @@ if not os.path.exists(result_dir):
 
 # scenarios
 
-scenarios = [scenario_base]#,
-    #scenario_renovation]
-
 def scenario_base(data, vertex, edge):
     """Base scenario: change nothing-"""
     return data, vertex, edge
@@ -47,13 +44,16 @@ def scenario_renovation(data, vertex, edge):
     area_demand.ix[('other', 'Heat'), 'peak'] *= 0.5
     return data, vertex, edge
 
+scenarios = [scenario_base]#,
+    #scenario_renovation]
+
 # solver
 
 def setup_solver(optim):
     """Change solver options to custom values."""
     if optim.name == 'cbc':
         # obtain more options through command line query 'cbc ?'
-        optim.set_options('sec={}}'.format(timeLimit))  # upper time limit
+        optim.set_options('sec={}'.format(timeLimit))  # upper time limit
     else:
         print("Warning from setup_solver: no options set for solver "
             "'{}'!".format(optim.name))

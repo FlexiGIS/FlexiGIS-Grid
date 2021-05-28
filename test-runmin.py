@@ -35,10 +35,12 @@ vertex_shapefile = os.path.join(base_directory, 'vertex')
 data_spreadsheet = os.path.join(base_directory, 'data.xlsx')
 
 # OUTPUT
-result_dir = os.path.join('data', 'mnl', 'results')
+result_dir = os.path.join('data/mnl/results')
 # create result directory if not existing already
 if not os.path.exists(result_dir):
     os.makedirs(result_dir)
+
+a = os.path.exists(result_dir)
 
 # DO
 

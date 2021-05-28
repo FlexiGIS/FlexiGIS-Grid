@@ -8,15 +8,15 @@ import os
 
 # Consts
 #WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
-WORKDIR = os.path.join('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz') # DLR Linux
-RES_DIR = os.path.join(WORKDIR, 'data/wechloy')
+WORKDIR = os.path.join('/') # DLR Linux
+RES_DIR = os.path.join('data/wechloy')
 if not os.path.exists(RES_DIR):
     os.makedirs(RES_DIR)
 EPSG_XY = 3857
 
 # IN
-buildings_apath = os.path.join(WORKDIR, 'data/flexigis-input/output', 'building.shp')
-edge_apath = os.path.join(WORKDIR, 'data/wechloy', 'edge.shp')
+buildings_apath = os.path.join('data/flexigis-input/output', 'building.shp')
+edge_apath = os.path.join('data/wechloy', 'edge.shp')
 
 # OUT
 to_edge_apath = os.path.join(RES_DIR, 'to_edge.shp')

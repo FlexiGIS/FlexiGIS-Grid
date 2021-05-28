@@ -35,9 +35,9 @@ import pandas as pd
 
 # Konstanten
 #WORKDIR = os.path.join('/Users/haukebents/Documents/Studium/Praktika/DLR ESY Oldb/FlexiGIS Netz Arbeit/rivus-wechloy') # Hauke Mac
-WORKDIR = os.path.normpath('/home/bent_ha/Documents/FlexiGIS-Netz-Praktikum/FlexiNetz') # DLR Linux
-INPUT_DIR = os.path.join(WORKDIR, 'data/flexigis-input/fg-wechloy-raw')
-RES_DIR = os.path.join(WORKDIR, 'data/flexigis-input/output')
+WORKDIR = os.path.normpath('/') # DLR Linux
+INPUT_DIR = os.path.join('data/flexigis-input/fg-wechloy-raw')
+RES_DIR = os.path.join('data/flexigis-input/output')
 
 
 shp_reader = gpd.read_file

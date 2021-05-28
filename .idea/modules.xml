@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FlexiNetz.iml" filepath="$PROJECT_DIR$/.idea/FlexiNetz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FlexiGIS-Netz/.idea/FlexiGIS-Netz.iml" filepath="$PROJECT_DIR$/../FlexiGIS-Netz/.idea/FlexiGIS-Netz.iml" />
     </modules>
   </component>
 </project>
