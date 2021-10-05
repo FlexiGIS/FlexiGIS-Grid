@@ -1,6 +1,6 @@
-# FlexiGIS-Netz
+# FlexiGIS-Grid
 
-The FlexiGIS-Netz scripts aim to perform a soft-coupling of the energy system models [**rivus**](https://github.com/tum-ens/rivus)
+The FlexiGIS-Grid scripts aim to perform a soft-coupling of the energy system models [**rivus**](https://github.com/tum-ens/rivus)
 and the QGIS-Plugin of [**FlexiGIS**](https://github.com/FlexiGIS/FlexiGIS-plugin) is performed. 
 
 **rivus** is a [mixed integer linear programming](https://en.wikipedia.org/wiki/Integer_programming) optimisation model 
@@ -101,7 +101,7 @@ Fig. 3: Diagram shows grids that are generated for maximum transported power. Or
 2. Clone repository to your working directory
    
     ```
-    (base)$ git clone https://github.com/FlexiGIS/FlexiGIS-Netz.git
+    (base)$ git clone https://github.com/FlexiGIS/FlexiGIS-Grid.git
     ```
 
 3. Create **conda** environment from environment.yml file via terminal
