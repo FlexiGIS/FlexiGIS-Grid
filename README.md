@@ -40,7 +40,7 @@ provided in the original publication.
 > - **Output**: cost-optimized multi-commodity energy infrastructure networks
 
 ![Workflow](doc/img/flexigis-rivus-workflow.png)
-Fig. 1: Workflow describing the general order processing steps from pbf-files to rivus-plots. 
+Fig. 1: Workflow describing the general order processing steps from pbf-files to rivus-plots. (Alhamwi et al., 2021, under submission) 
 
 ### 1. Geoprocessing with FlexiGIS:
 
@@ -78,7 +78,7 @@ In line 33 under *scenarios* choose one (or a set) of scenarios, that should be 
 
 ![Coupling interface](doc/img/flexigis-rivus-coupling-interface.png)
 Fig. 2: Follow this workflow to convert FlexiGIS-processed **wechloy**.osm.pbf to rivus-compatible edge.shp and vertex.shp. 
-This workflow defines conversion indicated through arrows in Fig. 1 at the border of Step 1 and Step 2. 
+This workflow defines conversion indicated through arrows in Fig. 1 at the border of Step 1 and Step 2. (Alhamwi et al., 2021, under submission)
 
 ### 3. Results:
 
@@ -90,7 +90,7 @@ utilization is provided in **report**.xlsx.
 
 ![rivus-caps](doc/img/rivus-caps.png)
 Fig. 3: Diagram shows grids that are generated for maximum transported power. Orange (Electricity), Red (Heat) and Brown
-(Gas).
+(Gas). (Dorfner, 2015)
 
 ## Installation:
 
