@@ -1,11 +1,11 @@
 # This is a conda environment setup file.
-# Mainly it is used by readthedocs to create a virt-env for flexigisnetz and
+# Mainly it is used by readthedocs to create a virt-env for flexigisgrid and
 # install the dependencies. 
 # Note: Install Skeletron manually from https://github.com/haukebents/Skeletron
 # Note: geopandas is from pip, so that it does not mess up the fiona install.
 # Note: You could also install from this with 
 # $ conda env create -f environment.yml
-name: flexigisnetz
+name: flexigisgrid
 channels:
 - conda-forge
 dependencies:
