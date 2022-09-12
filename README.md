@@ -126,6 +126,7 @@ Furthermore, the OpenStreetMap (OSM) data are available under the Open Database 
 Authors:
 * Alaa Alhamwi alaa.alhamwi@dlr.de 
 * Hauke Bents hauke.bents@dlr.de
+* Wided Medjroubi wided.medjroubi@dlr.de
 
 Organisation: German Aerospace Center - DLR Institute of Networked Energy Systems
 
