@@ -123,9 +123,9 @@ Furthermore, the OpenStreetMap (OSM) data are available under the Open Database 
 
 ## Contact
 
-Main author and project maintainer: Hauke Bents hauke.bents@dlr.de
-
-Supervisor: Alaa Alhamwi alaa.alhamwi@dlr.de
+Authors:
+* Alaa Alhamwi alaa.alhamwi@dlr.de 
+* Hauke Bents hauke.bents@dlr.de
 
 Organisation: German Aerospace Center - DLR Institute of Networked Energy Systems
 
