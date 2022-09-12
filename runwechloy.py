@@ -21,7 +21,7 @@ edge_shapefile = os.path.join(base_directory, 'edge_w_demands')
 vertex_shapefile = os.path.join(base_directory, 'vertex_w_source')
 data_spreadsheet = os.path.join(base_directory, 'data-flexigis.xlsx')
 
-timeLimit = '1200' # upper time limit for CBC solver
+timeLimit = '300'  # upper time limit for CBC solver
 plotBuildings = False
 
 # OUT
