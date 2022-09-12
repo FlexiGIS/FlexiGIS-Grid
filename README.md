@@ -12,6 +12,7 @@ and Optimisation of Energy Infrastructure at Urban Scale"](http://nbn-resolving.
 **FlexiGIS-plugin** is a graphical user interface (GUI) of the FlexiGIS-model. It extracts the 
 geo-datasets of the urban energy infrastructure and simulates the electricity consumption in the respective case study. 
 This plugin can be directly installed from the QGIS Plugin Manager within the QGIS Desktop.
+
 ---
 ## Features:
 
