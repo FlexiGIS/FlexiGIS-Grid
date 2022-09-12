@@ -12,7 +12,7 @@ and Optimisation of Energy Infrastructure at Urban Scale"](http://nbn-resolving.
 **FlexiGIS-plugin** is a graphical user interface (GUI) of the FlexiGIS-model. It extracts the 
 geo-datasets of the urban energy infrastructure and simulates the electricity consumption in the respective case study. 
 This plugin can be directly installed from the QGIS Plugin Manager within the QGIS Desktop.
-
+---
 ## Features:
 
   * **rivus** finds the minimum cost energy infrastructure networks to satisfy a given energy distribution for possibly multiple 
@@ -45,7 +45,7 @@ This plugin can be directly installed from the QGIS Plugin Manager within the QG
 ```
 (flexigisgrid)$ cp -r ../rivus/rivus .
 ```
-
+---
 ## Workflow:
 
 The coupling of both tools was guided by a three step workflow (see Fig. 1). Network optimization in rivus requires
@@ -111,6 +111,7 @@ utilization is provided in **report**.xlsx.
 Fig. 3: Diagram shows grids that are generated for maximum transported power. Orange (Electricity), Red (Heat) and Brown
 (Gas). (Dorfner, 2015)
 
+---
 ## License
 
 FlexiGIS-Grid is licensed under the [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause), "New BSD License" or "Modified BSD License".
