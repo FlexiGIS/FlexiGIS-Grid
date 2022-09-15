@@ -115,7 +115,7 @@ Fig. 3: Diagram shows grids that are generated for maximum transported power. Or
 ---
 ## License
 
-FlexiGIS-Grid is licensed under the [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause), "New BSD License" or "Modified BSD License".
+FlexiGIS-Grid is licensed under the [GPL General Public License version 3](https://opensource.org/licenses/GPL-3.0).
 
 Please see the file [LICENSE.md](LICENSE.md) for further information about how the content is licensed.
 
